@@ -2,11 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 \usepackage{tikz}
-%\usepackage{subfigure}
-%\usepackage[scriptsize]{caption}
-\usepackage{multicol}
+\usepackage[scriptsize]{caption}
 \renewcommand*{\figurename}{}
-\usetikzlibrary{shapes,positioning,snakes,calc}
+\usetikzlibrary{shapes,positioning,snakes,calc,chains}
 \usetheme{Darmstadt}
 \usepackage{graphicx}
 
@@ -157,8 +155,22 @@
   \end{itemize}
   % Ajouter la photo de Samuel Morse.
   
-  % TODO
-  Un exemple Alphabet écrit en morse.
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}
+      \begin{scope}[
+        start chain,
+        node distance=1mm,
+        every node/.style={on chain},
+        dot/.style={fill=black,circle,minimum height=1mm,minimum width=1mm,inner sep=0pt},
+        dash/.style={fill=black,rounded rectangle,minimum height=1mm,minimum width=4mm,inner sep=0pt}]
+        \node[dot] {}; \node[dash] {}; \node[dot] {}; \node[dash] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dash] {};
+        \node[dash] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dash] {};
+        \node[dash] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dot] {}; \node[dash] {};
+      \end{scope}
+    \end{tikzpicture}
+    \caption{Mot «Alphabet» écrit en morse.}
+  \end{figure}
 \end{frame}
 
 
