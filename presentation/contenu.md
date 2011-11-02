@@ -47,7 +47,7 @@ Morse
 Formel : oui
 Expressivité : binaire
 Pas utile pour la communication homme-machine.
-Alphabet en morse : .-.-...--......--....-
+Mot "Alphabet" écrit en morse : .-.-...--......--....-
 
 Braille
 =======
