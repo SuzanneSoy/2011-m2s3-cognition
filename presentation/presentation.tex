@@ -29,7 +29,13 @@
   \vskip0pt%
 }
 
-% TODO : sommaire à chaque section
+\AtBeginSection[] { 
+  \begin{frame}[plain] 
+    \frametitle{Plan} 
+    \tableofcontents[currentsection] 
+  \end{frame} 
+  \addtocounter{framenumber}{-1} 
+}
 
 \begin{document}
 \renewcommand*{\figurename}{}
@@ -45,6 +51,13 @@
 %\item Cohérence du groupe nécessite une communication entre les membres.
 \item Pour se comprendre, il faut des concepts et un mécanisme d'échange communs.
 \end{itemize}
+\begin{tikzpicture}[scale=0.8]
+  \draw (-0.5,-0.5) rectangle (2.5,1.5);
+  \node[fill=red,circle,inner sep=4] at (0,0) {};
+  \node[fill=green,circle,inner sep=4] at (2,0) {};
+  \node[fill=blue,circle,inner sep=4] at (1,1) {};
+\end{tikzpicture}
+% TODO
 % schéma avec groupe, concepts et échanges
 % montrer si on n'a pas de concepts communs
 % si pas de protocoles communs
@@ -52,7 +65,6 @@
 \end{frame}
 
 \begin{frame}
-%% TODO : block
 \begin{block}{Définitions}
 \begin{itemize}
 	\item Protocole artificiel\\
