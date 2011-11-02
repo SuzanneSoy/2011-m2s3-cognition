@@ -76,9 +76,9 @@
         \node[draw,fill=white!20!blue!70!red,rectangle,minimum width=0.3cm,minimum height=0.3cm] (lc1) at (rc.270) {};
       \end{scope}
       
-      \draw[<->, thick] (lb1)--(lc1);
-      \only<2->{\draw[<->, thick, dashed, red] (la2)--(lb2);}
-      \only<3->{\draw[<->, thick, dashed, red] (la1)--(lc1);}
+      \only<2->{\draw[<->, thick] (lb1)--(lc1);}
+      \only<3->{\draw[<->, thick, dashed, red] (la2)--(lb2);}
+      \only<4->{\draw[<->, thick, dashed, red] (la1)--(lc1);}
     \end{tikzpicture}
     \caption{Communication entre trois agents}
   \end{figure}
