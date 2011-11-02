@@ -2,8 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 \usepackage{tikz}
-\usepackage{subfigure}
-\usepackage[scriptsize]{caption}
+%\usepackage{subfigure}
+%\usepackage[scriptsize]{caption}
 \usepackage{multicol}
 \renewcommand*{\figurename}{}
 \usetikzlibrary{shapes,positioning,snakes,calc}
@@ -29,6 +29,8 @@
   \vskip0pt%
 }
 
+% TODO : sommaire à chaque section
+
 \begin{document}
 \renewcommand*{\figurename}{}
 
@@ -39,31 +41,27 @@
 \section{Introduction}
 
 \begin{frame}
-Approche globale :
-\\ Tout individu quel qu'il soit, privé de toutes formes de communication, d'émotions et de sensations, ne peuvent
-en aucune manière évoluer et former de groupes cohérents. La cohérence et l'intégrité d'un groupe passe majoritairement
-par un échange d'informations entre les individus. Celles-ci ne peuvent pas être transmises n'importe
-comment, les individus constituant le groupe doivent être en mesure de les comprendre.
-\\ Le formatage de l'information devient essentiel tout comme le support qui va être utilisé.
-\newline 
+\begin{itemize}
+%\item Cohérence du groupe nécessite une communication entre les membres.
+\item Pour se comprendre, il faut des concepts et un mécanisme d'échange communs.
+\end{itemize}
+% schéma avec groupe, concepts et échanges
+% montrer si on n'a pas de concepts communs
+% si pas de protocoles communs
+% Mettre un ordi dedans.
 \end{frame}
 
 \begin{frame}
-Définitions :
+%% TODO : block
+\begin{block}{Définitions}
 \begin{itemize}
-	\item Protocoles artificiels
-	Définition de manière tout à fait artificielle d'un ensemble de règles.
-	\item Agents naturels
-	Tous types d'individus "naturels", individus non engendrés par une action humaine (A revoir).
+	\item Protocole artificiel\\
+	Règles arbitraires qui codifient l'échange entre des agents.\\
+	Nous étudierons seulement les protocoles artificiels formels.
+	\item Agent naturel\\
+	Entité capable d'interagir non crée par l'homme.
 \end{itemize}
-\end{frame}
-
-\begin{frame}
-Les limites :
-\begin{itemize}
-	\item Les protocoles artificiels formels
-	\item Autres limites
-\end{itemize}
+\end{block}
 \end{frame}
 
 \section{Espéranto}
@@ -74,7 +72,8 @@ Les limites :
 \end{center}
 \begin{itemize}
 \item Origine et but.
-\item Une langue dite "construite"
+\item Une langue dite \emph{construite}
+\item Une langue vivante.
 \end{itemize}
 \end{frame}
 
@@ -84,64 +83,57 @@ Les limites :
 \end{center}
 \begin{itemize}
 \item Une grammaire régulière.
-\\ Exemple
-\item Une langue "agglutinante".
-\\ Exemple.
+\\ Exemple eo + fr.
+\item Une langue agglutinante.
+\\ Exemple eo + fr.
 \end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\huge Espéranto
-\end{center}
-Une langue vivante.
-\\ Petit paragraphe en espéranto.
 \end{frame}
 
 \section[Contrats]{Législation et contrats formels}
 
 \begin{frame}  
   \begin{itemize}
-  \item Brouillon de spec
-  \item Pas d'implémentation
+  \item Buisness Contract Language (BCL)% GovMil.pdf
+  \item Formalisation des obligations, permissions, pénalités.% en cas de violation des obligations
+  \item Vérification de la consistance.
   \end{itemize}
 \end{frame}
 
-\section{Supports}
-
-\begin{frame}  
-  \begin{itemize}
-  \item Alphabet % + origine de l'alphabet
-  \item Morse
-  \item Braille
-  \item Langage des signes
-  \end{itemize}
-\end{frame}
-
-\begin{frame}  
-  \Huge Alphabet
-\end{frame}
-
+\section[Alphabets]{Alphabets et notations}
 
 \begin{frame}
-  \Huge Le morse :
-  \normalsize \begin{itemize}
+  {\Huge Logogrammes}
+  \begin{itemize}
+  \item Alphabet roman
+  \item Alphabet grec
+  \item \dots
+  \end{itemize}
+  % TODO : images
+  \begin{itemize}
+  \item Idéogrammes chinois
+  \item Hiéroglyphes
+  \item \dots
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {\Huge Le morse}
+  \begin{itemize}
   \item Invention attribué à Samuel Morse (1791 - 1872)
   \item Créé en 1835
   \item Seulement deux types d'impulsion sont nécessaires.
   \end{itemize}
   % Ajouter la photo de Samuel Morse.
-\end{frame}
-
-\begin{frame}  
-  \Huge Le morse.
-  \\ \normalsize Un exemple Alphabet écrit en morse.
+  
+  % TODO
+  Un exemple Alphabet écrit en morse.
 \end{frame}
 
 
 \begin{frame}  
   \Huge{Le braille}
   \begin{center}
+  % TODO
   \includegraphics[width=4cm]{./include/cellule_braille.jpg}
   \end{center}
   \normalsize \begin{itemize}
@@ -159,24 +151,39 @@ Une langue vivante.
 
 
 \begin{frame}  
-  \Huge La langue des signes.
+  { \Huge La langue des signes. }
+  \begin{itemize}
+  \item IBM : programme pour traduire texte vers Langue des signes.
+  \item Facilite la communication avec les malentendants.
+  \item Grammaire assez floue.
+  \item Pas exactement le même vocabulaire que le français.
+  \item Encodage de mots et concepts.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}  
-  \Huge La langue des signes.
-\end{frame}
-
-\section{Procédures administratives}
-
-\begin{frame}
+  \begin{itemize}
+  \item Vues perspective (ISO...) % TODO
+  \item Vue éclatée
+  \item Notation mathématique
+  \end{itemize}
+% TODO : une vue éclatée
+% TODO : une formule
 \end{frame}
 
 \section{Conclusion}
 
+% Graphique avec expressivité vs formel
+% Esperanto : patate 7-10, 4-1
+% Français : patate 7-10, 2-1
+% Braille, morse : point 1, 10
+% Alphabet roman : patate 1, 10-8
+% Alphabets chinois etc. : patate 1-3, 10-6
+% LSF : patate 1-3, 10-6
+% Diagrammes et vues normalisées : point 6, 10
+% BCL (contrats) : point 6, 9
+
 \begin{frame}
-  \begin{itemize}
-  \item Sujet ouvert% 0 résultats sur google pour "protocoles artificiels" "agents naturels".
-  \end{itemize}
 \end{frame}
 
 \end{document}
