@@ -95,6 +95,11 @@
 \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Plan} 
+  \tableofcontents
+\end{frame} 
+
 \section{Espéranto}
 
 \begin{frame}
@@ -129,12 +134,21 @@
 \section[Contrats]{Législation et contrats formels}
 
 \begin{frame}
-  \frametitle{Législation et contrats formels}
-  \begin{itemize}
-  \item Buisness Contract Language (BCL)% GovMil.pdf
-  \item Formalisation des obligations, permissions, pénalités.% en cas de violation des obligations
-  \item Vérification de la consistance.
-  \end{itemize}
+  \frametitle{Législation et contrats formels}% GovMil.pdf
+  \begin{block}{Business Contract Language (BCL)}
+    \begin{itemize}
+    \item Formalisation des obligations, permissions, pénalités.% en cas de violation des obligations
+    \item Vérification de la consistance.
+    \item Plusieurs tentatives ont été faites.
+    \end{itemize}
+  \end{block}
+  \vskip 1em
+  \footnotesize
+\texttt{Policy: MakeGoodsAvailable\\
+\quad Role: Supplier\\
+\quad Modality: Obligation\\
+\quad Trigger: PurchaseOrder\\
+\quad Behaviour: GoodsAvailable.date before (PurchaseOrder.date + 1)}
 \end{frame}
 
 \section[Alphabets]{Alphabets et notations}
@@ -291,6 +305,15 @@
     \end{tikzpicture}
     \caption{Relation entre expressivité et formalisme}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Sources}
+  \begin{itemize}
+  \item A formal analysis of a business contract language, Guido Governatori and Zoran Milosevic.
+  \item {\small\url{http://ibm.com/press/us/en/pressrelease/22316.wss}}
+  \item {\small\url{http://www.atelier-calligraphie.com/frames/savlogo.htm}}
+  \end{itemize}
 \end{frame}
 
 \end{document}
