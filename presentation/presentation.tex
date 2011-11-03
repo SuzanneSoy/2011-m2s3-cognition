@@ -2,17 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 \usepackage{tikz}
+\makeatletter\def\@makecaption{}\makeatother
 \usepackage[scriptsize]{caption}
 \renewcommand*{\figurename}{}
 \usetikzlibrary{shapes,positioning,snakes,calc,chains}
-\usetheme{Darmstadt}
+\usetheme{Frankfurt}
 \usepackage{graphicx}
-
-% \setbeamercolor{alerted text}{fg=blue}
 
 \title{FMIN327 Cognition individuelle et collective\\ Protocoles artificiels entre agents naturels}
 \author{DUPÉRON Georges \and\\ BONAVERO Yoann}
-\institute{Université Montpellier II, Département informatique  \\ Master 2 IFPRU \\ Sous la direction de Monsieur Jacques Ferber}
+\institute{Université Montpellier II,\\Département informatique  \\ Master 2 IFPRU \\ Sous la direction de Monsieur Jacques Ferber}
 \date{Jeudi, 3 novembre 2011}
 
 \defbeamertemplate*{footline}{shadow theme}
@@ -28,7 +27,7 @@
 }
 
 \AtBeginSection[] { 
-  \begin{frame}[plain] 
+  \begin{frame}
     \frametitle{Plan} 
     \tableofcontents[currentsection] 
   \end{frame} 
@@ -45,6 +44,7 @@
 \section{Introduction}
 
 \begin{frame}
+\frametitle{Introduction}
 \begin{block}{Définitions}
 \begin{itemize}
 	\item Protocole artificiel\\
@@ -57,6 +57,7 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Introduction}
   \begin{block}{}
     Pour se comprendre, il faut des concepts et un mécanisme d'échange communs.
   \end{block}
@@ -98,31 +99,38 @@
 \section{Espéranto}
 
 \begin{frame}
-\begin{center}
-\huge Espéranto
-\end{center}
+\frametitle{Espéranto}
+\begin{block}{L'espéranto, qu'est-ce que c'est ?}
 \begin{itemize}
-\item Origine et but.
-\item Une langue dite \emph{construite}
+\item Langue universelle.
+\item Une langue dite \emph{construite}.
 \item Une langue vivante.
 \end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}
-\begin{center}
-\huge Espéranto
-\end{center}
+\frametitle{Espéranto}
 \begin{itemize}
 \item Une grammaire régulière.
-\\ Exemple eo + fr.
+\begin{itemize}
+\item Fari : mi faras, vi faras, \dots
+\item Esti : mi estas, vi estas, \dots
+\end{itemize}
 \item Une langue agglutinante.
-\\ Exemple eo + fr.
+\begin{itemize}
+\item {\color{brown}\emph{vid}}i = voir
+\item {\color{brown}\emph{vid}}o = vue
+\item {\color{brown}\emph{vid}}ebla = visible
+\item ne{\color{brown}\emph{vid}}ebla = invisible
+\end{itemize}
 \end{itemize}
 \end{frame}
 
 \section[Contrats]{Législation et contrats formels}
 
-\begin{frame}  
+\begin{frame}
+  \frametitle{Législation et contrats formels}
   \begin{itemize}
   \item Buisness Contract Language (BCL)% GovMil.pdf
   \item Formalisation des obligations, permissions, pénalités.% en cas de violation des obligations
@@ -133,15 +141,15 @@
 \section[Alphabets]{Alphabets et notations}
 
 \begin{frame}
-  {\Huge Alphabets et Logogrammes}
-  \begin{block}{Alphabets}
+  \frametitle{Alphabets et Logogrammes}
+  \begin{block}{Alphabets, phonogrammes et syllabaires}
   \begin{itemize}
   \item Alphabet roman
   \item Alphabet grec
   \item \dots
   \end{itemize}
   \end{block}
-  \begin{block}{Logogrammes}
+  \begin{block}{Idéogrammes et pictogrammes}
   % TODO : images
   \begin{itemize}
   \item Idéogrammes chinois
@@ -152,7 +160,7 @@
 \end{frame}
 
 \begin{frame}
-  { \Huge Le code morse }
+  \frametitle{Le code morse}
   \begin{itemize}
   \item Invention attribué à Samuel Morse (1791 - 1872)
   \item Créé en 1835
@@ -180,7 +188,7 @@
 
 
 \begin{frame}  
-  { \Huge Le braille }
+  \frametitle{Le braille}
   \begin{center}
   % TODO
   \includegraphics[width=4cm]{./include/cellule_braille.jpg}
@@ -194,20 +202,20 @@
 \end{frame}
 
 \begin{frame}  
-  { \Huge Le braille }
+  \frametitle{Le braille}
   \begin{block}{Exemple}
   \begin{center}
   \includegraphics[width=4cm]{./include/braille_alphabet.jpg}
   \end{center}
-  Exemple du mot <alphabet> écrit en braille :
+  Exemple du mot «alphabet» écrit en braille :
   \end{block}
 \end{frame}
 
 
 \begin{frame}  
-  { \Huge La langue des signes. }
+  \frametitle{La langue des signes}
   \begin{itemize}
-  \item IBM : programme pour traduire texte vers Langue des signes.
+  \item IBM : Traduction texte vers langue des signes.
   \item Facilite la communication avec les malentendants.
   \item Grammaire assez floue.
   \item Pas exactement le même vocabulaire que le français.
@@ -216,10 +224,10 @@
 \end{frame}
 
 \begin{frame}  
-  { \Huge Autres protocoles artificiels }
+  \frametitle {Autres notations}
   \begin{block}{Les vues}
   \begin{itemize}
-  \item Vues perspective (ISO...) % TODO
+  \item Projections axonométriques (ISO 5456-3)
   \item Vue éclatée
   \end{itemize}
   \end{block}
@@ -235,7 +243,7 @@
 \section{Conclusion}
 
 \begin{frame}
-  { \Huge Conclusion }
+  \frametitle{Conclusion}
   \begin{figure}
     \centering
     \begin{tikzpicture}[scale=0.5,node distance=0.5cm,font=\footnotesize]
