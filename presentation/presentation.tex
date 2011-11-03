@@ -217,17 +217,55 @@
 
 \section{Conclusion}
 
-% Graphique avec expressivité vs formel
-% Esperanto : patate 7-10, 4-1
-% Français : patate 7-10, 2-1
-% Braille, morse : point 1, 10
-% Alphabet roman : patate 1, 10-8
-% Alphabets chinois etc. : patate 1-3, 10-6
-% LSF : patate 1-3, 10-6
-% Diagrammes et vues normalisées : point 6, 10
-% BCL (contrats) : point 6, 9
-
 \begin{frame}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[scale=0.5,node distance=0.5cm,font=\footnotesize]
+      \node at (12,10) {};
+      \draw[->] (0,0) -- (11cm,0);
+      \draw[->] (0,0) -- (0,11cm);
+      \node[anchor=north] at (10cm,0) {Expressivité};
+      \node[anchor=south,xshift=0.5cm] at (0,11cm) {Formalisme};
+      
+      \only<2->{
+        \node[fill=red,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (mb) at (1cm,10cm) {};
+        \node[right=of mb,text width=2cm] (mbtext) {Morse\\Braille};
+        \draw[draw=red,draw opacity=0.5,thick] (mbtext.170) -- (mb);
+      }
+      
+      \only<3->{
+        \node[fill=orange, fill opacity=0.5,ellipse,minimum width=1cm,minimum height=0.5cm,inner sep=1mm,rotate=-90] (sph) at (1cm,9.4cm) {};
+        \node[anchor=west,at=(sph.30),xshift=1.5cm,yshift=-0.8cm,text width=2cm] (s) {Syllabaires\\Phonogrammes};
+        \draw[draw=orange,draw opacity=0.5,thick] (s.170) -- (sph);
+      }
+      
+      \only<4->{
+        \node[fill=yellow!80!black, fill opacity=0.5,ellipse,minimum width=3cm,minimum height=0.7cm,inner sep=1mm,rotate=-65] (ipi) at (2cm,8cm) {};
+        \node[anchor=north,at=(ipi.south),yshift=-1.5cm,xshift=5mm,text width=2cm,text centered] (i) {Idéogrammes\\Pictogramme\\LSF};
+        \draw[draw=yellow!80!black,draw opacity=0.5,thick] (i) -- (ipi.-15);
+      }
+      
+      \only<5->{
+        \node[fill=green,fill opacity=0.5,ellipse,minimum width=2.8cm,minimum height=0.8cm,inner sep=1mm,rotate=-45] at (8.5cm,2.5cm) {Espéranto};
+        \node[fill=blue, fill opacity=0.5,ellipse,minimum width=2.3cm,minimum height=0.7cm,inner sep=1mm,rotate=-20] at (8.5cm,1.5cm) {Français};
+      }
+      
+      \only<6->{
+        \node[fill=brown,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (no) at (6cm,10cm) {};
+        \node[right=of no,text width=2cm] (notext) {Notations};
+        \draw[draw=brown,draw opacity=0.5,thick] (notext) -- (no);
+
+        \node[fill=brown,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (bcl) at (6cm,9cm) {};
+        \node[right=of bcl,text width=2cm] (bcltext) {BCL};
+        \draw[draw=brown,draw opacity=0.5,thick] (bcltext) -- (bcl);
+      }
+      
+      \only<7->{
+        \draw[draw=black,line width=1mm,draw opacity=0.5] (0.2,10.8) -- (10.8,0.2);
+      }
+    \end{tikzpicture}
+    \caption{Relation entre expressivité et formalisme}
+  \end{figure}
 \end{frame}
 
 \end{document}
