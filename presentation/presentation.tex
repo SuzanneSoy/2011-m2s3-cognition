@@ -2,17 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 \usepackage{tikz}
+\makeatletter\def\@makecaption{}\makeatother
 \usepackage[scriptsize]{caption}
 \renewcommand*{\figurename}{}
 \usetikzlibrary{shapes,positioning,snakes,calc,chains}
-\usetheme{Darmstadt}
+\usetheme{Frankfurt}
 \usepackage{graphicx}
-
-% \setbeamercolor{alerted text}{fg=blue}
 
 \title{FMIN327 Cognition individuelle et collective\\ Protocoles artificiels entre agents naturels}
 \author{DUPÉRON Georges \and\\ BONAVERO Yoann}
-\institute{Université Montpellier II, Département informatique  \\ Master 2 IFPRU \\ Sous la direction de Monsieur Jacques Ferber}
+\institute{Université Montpellier II,\\Département informatique  \\ Master 2 IFPRU \\ Sous la direction de Monsieur Jacques Ferber}
 \date{Jeudi, 3 novembre 2011}
 
 \defbeamertemplate*{footline}{shadow theme}
@@ -28,7 +27,7 @@
 }
 
 \AtBeginSection[] { 
-  \begin{frame}[plain] 
+  \begin{frame}
     \frametitle{Plan} 
     \tableofcontents[currentsection] 
   \end{frame} 
@@ -45,6 +44,7 @@
 \section{Introduction}
 
 \begin{frame}
+  \frametitle{Introduction}
   \begin{block}{}
     Pour se comprendre, il faut des concepts et un mécanisme d'échange communs.
   \end{block}
@@ -83,6 +83,7 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Introduction}
 \begin{block}{Définitions}
 \begin{itemize}
 	\item Protocole artificiel\\
@@ -94,60 +95,85 @@
 \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Plan} 
+  \tableofcontents
+\end{frame} 
+
 \section{Espéranto}
 
 \begin{frame}
-\begin{center}
-\huge Espéranto
-\end{center}
+\frametitle{Espéranto}
+\begin{block}{L'espéranto, qu'est-ce que c'est ?}
 \begin{itemize}
-\item Origine et but.
-\item Une langue dite \emph{construite}
+\item Langue universelle.
+\item Une langue dite \emph{construite}.
 \item Une langue vivante.
 \end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}
-\begin{center}
-\huge Espéranto
-\end{center}
+\frametitle{Espéranto}
 \begin{itemize}
 \item Une grammaire régulière.
-\\ Exemple eo + fr.
+\begin{itemize}
+\item Fari : mi faras, vi faras, \dots
+\item Esti : mi estas, vi estas, \dots
+\end{itemize}
 \item Une langue agglutinante.
-\\ Exemple eo + fr.
+\begin{itemize}
+\item {\color{brown}\emph{vid}}i = voir
+\item {\color{brown}\emph{vid}}o = vue
+\item {\color{brown}\emph{vid}}ebla = visible
+\item ne{\color{brown}\emph{vid}}ebla = invisible
+\end{itemize}
 \end{itemize}
 \end{frame}
 
 \section[Contrats]{Législation et contrats formels}
 
-\begin{frame}  
-  \begin{itemize}
-  \item Buisness Contract Language (BCL)% GovMil.pdf
-  \item Formalisation des obligations, permissions, pénalités.% en cas de violation des obligations
-  \item Vérification de la consistance.
-  \end{itemize}
+\begin{frame}
+  \frametitle{Législation et contrats formels}% GovMil.pdf
+  \begin{block}{Business Contract Language (BCL)}
+    \begin{itemize}
+    \item Formalisation des obligations, permissions, pénalités.% en cas de violation des obligations
+    \item Vérification de la consistance.
+    \item Plusieurs tentatives ont été faites.
+    \end{itemize}
+  \end{block}
+  \vskip 1em
+  \footnotesize
+\texttt{Policy: MakeGoodsAvailable\\
+\quad Role: Supplier\\
+\quad Modality: Obligation\\
+\quad Trigger: PurchaseOrder\\
+\quad Behaviour: GoodsAvailable.date before (PurchaseOrder.date + 1)}
 \end{frame}
 
 \section[Alphabets]{Alphabets et notations}
 
 \begin{frame}
-  {\Huge Logogrammes}
+  \frametitle{Alphabets et Logogrammes}
+  \begin{block}{Alphabets, phonogrammes et syllabaires}
   \begin{itemize}
   \item Alphabet roman
   \item Alphabet grec
   \item \dots
   \end{itemize}
+  \end{block}
+  \begin{block}{Idéogrammes et pictogrammes}
   % TODO : images
   \begin{itemize}
   \item Idéogrammes chinois
   \item Hiéroglyphes
   \item \dots
   \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-  {\Huge Le morse}
+  \frametitle{Le code morse}
   \begin{itemize}
   \item Invention attribué à Samuel Morse (1791 - 1872)
   \item Créé en 1835
@@ -175,7 +201,7 @@
 
 
 \begin{frame}  
-  \Huge{Le braille}
+  \frametitle{Le braille}
   \begin{center}
   % TODO
   \includegraphics[width=4cm]{./include/cellule_braille.jpg}
@@ -189,15 +215,20 @@
 \end{frame}
 
 \begin{frame}  
-  \Huge Le braille
-  \\ des exemples.
+  \frametitle{Le braille}
+  \begin{block}{Exemple}
+  \begin{center}
+  \includegraphics[width=4cm]{./include/braille_alphabet.jpg}
+  \end{center}
+  Exemple du mot «alphabet» écrit en braille :
+  \end{block}
 \end{frame}
 
 
 \begin{frame}  
-  { \Huge La langue des signes. }
+  \frametitle{La langue des signes}
   \begin{itemize}
-  \item IBM : programme pour traduire texte vers Langue des signes.
+  \item IBM : Traduction texte vers langue des signes.
   \item Facilite la communication avec les malentendants.
   \item Grammaire assez floue.
   \item Pas exactement le même vocabulaire que le français.
@@ -206,11 +237,18 @@
 \end{frame}
 
 \begin{frame}  
+  \frametitle {Autres notations}
+  \begin{block}{Les vues}
   \begin{itemize}
-  \item Vues perspective (ISO...) % TODO
+  \item Projections axonométriques (ISO 5456-3)
   \item Vue éclatée
-  \item Notation mathématique
   \end{itemize}
+  \end{block}
+  \begin{block}{Notation mathématique}
+  \begin{center}
+  \includegraphics[height=1.5cm]{./include/formule.jpg}
+  \end{center}
+  \end{block}
 % TODO : une vue éclatée
 % TODO : une formule
 \end{frame}
@@ -218,6 +256,7 @@
 \section{Conclusion}
 
 \begin{frame}
+  \frametitle{Conclusion}
   \begin{figure}
     \centering
     \begin{tikzpicture}[scale=0.5,node distance=0.5cm,font=\footnotesize]
@@ -266,6 +305,15 @@
     \end{tikzpicture}
     \caption{Relation entre expressivité et formalisme}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Sources}
+  \begin{itemize}
+  \item A formal analysis of a business contract language, Guido Governatori and Zoran Milosevic.
+  \item {\small\url{http://ibm.com/press/us/en/pressrelease/22316.wss}}
+  \item {\small\url{http://www.atelier-calligraphie.com/frames/savlogo.htm}}
+  \end{itemize}
 \end{frame}
 
 \end{document}

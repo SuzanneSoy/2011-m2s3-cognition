@@ -15,6 +15,10 @@ Ce qui nous intéresse : remplacer un des agents
 
 Espéranto
 =========
+Loglan et Lojban
+
+Origine : Ludwik Lejzer Zamenhof 1870
+
 Autres langues construites (tolkien -> trop informel)
 
 Plus facile à analyser, moins d'ambigüités
