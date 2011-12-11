@@ -18,9 +18,9 @@
 
 \maketitle
 \begin{abstract}
-  Dans cet article, nous effectuons une étude comparative de
+  Dans cet article, nous effecteuons une étude comparative de
   différents protocoles de communication utilisés par les humains
-  suceptibles d'être utilisés dans la communication homme-machine,
+  susceptibles d'être utilisés dans la communication homme-machine,
   sans grand apprentissage de la part des humains. Nous montrons qu'en
   général, le niveau d'expressivité d'une langue est inversément
   proportionnel à son niveau de formalisme. Nous montrons aussi que
@@ -49,29 +49,90 @@ place un moyen de communication efficace. Toutes ces façons de
 transmettre l'information ont sans cesse évolué pour répondre en 
 permanance aux besoins.
 
-Dans la communication il est possible de regrouper en deux grandes 
-catégorie les protocoles de communication. Il y a ceux qui sont 
-"naturels" et ceux qui sont engendré par un "individu" dit artificiels.
+Dans la communication il est possible de regrouper en deux grandes
+catégorie les protocoles de communication. Il y a ceux qui sont
+"naturels", qui ont évolués de manière organique au fil des années, et
+ceux qui sont inventés par un «individu» dit artificiels.
 
-\subsection{Les limites}
-Dans cette présentation nous nous limiterons aux seul protocoles 
-artificiel et plus précisément aux protocoles artificiels formels. En 
-d'autre termes ceux qui ont normes, règles bien définis, qui permettent 
-de définir ce protocole de manière unique et sans ambiguïtées.
+\subsection{But de l'étude}
+Le but de cette étude est de trouver un ou des protocoles de
+communication entre agents qui seraient facilement appris par des
+agents naturels (les humains), qui pourraient de préférence être
+utilisés dans la communication de tous les jours (cela assurerait que
+les humains maîtriserait bien le protocole), et qui seraient
+facilement «compris» par une machine.
 
-Les autres limites sont celles définies par le sujet lui même 
-"protocoles artificiel" et "agent naturels". Nous de traiterons pas de 
-la communication entre agent artificiels comme les robots.
+Comme un tel protocole n'existe probablement pas, nous étudierons la
+facilité d'apprentissage par les humains, l'expressivité et la
+facilité de compréhension par une machine de plusieurs protocoles,
+afin de trouver les caractéristiques du protocole qui semblent lui
+permettre de satisfaire ces trois critères.
 
-\newpage
-% L'espéranto.
+% TODO : nettoyer un peu ça vis-à-vis du paragraphe ci-dessus.
+Nous nous intéresserons donc principalement aux protocoles
+artificiels. En effet, les protocoles naturels, de part leur évolution
+non contrôlée au fil du temps ont tendance à être très ambigus, et
+avoir une grammaire comportant beaucoup d'exceptions (donc difficile à
+interpréter), et une syntaxe approximative, qui accepte différents
+ordres pour les mots d'une phrase, mais souvent avec une différence
+dans la sémantique.
+
+Nous chercherons aussi à ce que les protocoles étudiés soient
+formels. En d'autre termes ceux qui ont normes, des règles bien
+définies, qui permettent de définir le protocole de manière unique et
+sans ambiguïtées, ce qui facilite leur interprétation par la
+machine. La plupart des protocoles artificiels ont une syntaxe et une
+grammaire plutôt rigoureuse.
+
+Nous considèrerons les protocoles parlés couremment par un gand nombre
+d'agents naturels (des humains). Nous n'explorerons pas la possibilité
+d'utiliser ces mêmes protocoles entre des agents artificiels comme des
+robots ou des ordinateurs, ni des protocoles prévus dans ce but (car
+ils sont en général inadaptés à l'apprentissage par les humains).
+
+\subsection{Criètres}
+Pour chaque protocole de communication, nous étudierons plusieurs critères~:
+\begin{itemize}
+\item La facilité d'apprentissage par un individu.
+\item L'ambigüité de son vocabulaire, sa grammaire et sa syntaxe,
+  autrement dit la difficulté qu'une machine aura à comprendre le
+  protocole.
+\item L'expressivité du protocole, autrement dit la facilité avec
+  laquelle un humain pourra exprimer des concepts et relations
+  complexes.
+\end{itemize}
+
+\section{Les langues naturelles}
+
+Les langues naturelles sont les protocoles de communication les mieux
+maîtrisés par les humains.
+
+Cependant, le vocabulaire est source d'ambigüité, d'une part à cause
+des multiples définitions d'un mot, et des connotations qu'il peut
+acquérir selon son contexte, et d'autre part à cause des néologismes
+qui ne seraient pas encore répertoriés dans un dictionnaire, dont le
+sens est difficile à déterminer de manière certaine en utilisant
+seulement leur étymologie.
+
+De même, comme expliqué précédemment, leur grammaire est irrégulière
+et bien qu'elle permette souvent de faciliter la compréhension de la
+phrase (on pourra rattacher un adjectif au féminin seulement aux
+substantifs féminins de la phrase, ce qui élimine des combinaisons
+possibles), les mots invariables et autres exceptions apparaissent
+trop souvent pour que l'on puisse compter dessus.
+
+La syntaxe de ces langues est elle aussi une grande source d'ambigüité
+puisque changer l'ordre des mots d'une phrase peut résulter en une
+autre phrase correcte, mais avec un sens plus ou moins différent de la
+première, sans qu'il y ait vraiment de règles formelles décrivant
+cela.
+
 \section{Une langue artificielle : L'Espéranto}
 \subsection{Présentation}
 \subsection{Origine et objectif}
 \subsection{Principe de fonctionnement}
 \subsection{…}
 
-% Alphabet et supports
 \section{Alphabets et supports}
 \subsection{L'alphabet}
 \subsubsection{Ses origines}
@@ -118,7 +179,7 @@ du lien entre une formule et son contexte.
 En effet il est très difficile de retrouver le contexte d'une formule lorsque celle-ci est déjà écrite et isolée.
 
 
-\section{conclusion}
+\section{Conclusion}
 Graphique de comparaison des différents supports en terme d'expressivité et de formalismem.
 
 \end{document}
