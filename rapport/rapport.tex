@@ -203,25 +203,13 @@ contraintes sur la syntaxe (et le vocabulaire, en fixant une
 sémantique précises pour les racines) pour le rendre moins ambigu sans
 perdre beaucoup en expressivité.
 
-\section{Alphabets et supports}
+\section{Alphabets et logogrammes}
 \subsection{L'alphabet}
-\subsubsection{Ses origines}
-\subsubsection{Dans quel but}
-\subsubsection{Des exemples}
+% \subsubsection{Ses origines}
+% \subsubsection{Dans quel but}
+% \subsubsection{Des exemples}
 
-\subsection{Les supports}
-\subsubsection{Le morse}
-Le code Morse est généralement attribué à Samuel Morse. Ce code à été inventé pour la télégraphie en 1835.
-Il consiste en une série d'impulsions. Les lettres, chiffres, signes de ponctuation sont représenté par des séries d'impulsions.
-Seulement deux types d'impulsions son nécessaires pour tout coder, une impulsion courrte que l'on appelle généralement
-"Point" et une impulsion longue appellée "Trait".
-
-Co code possède un très faible expréssivité du fait d'un nombre important d'impulsions utilisées pour un seul caractère.
-Ce code est considéré comme le précurseur des communications numériques que l'on connait.
-
-Les militaire ont utilisé ce code pour effectuer des transmission codées, et même si un spectre de fréquence radio et toujours 
-réservé pour les sueles émission en morse, ce code n'apporte pas de grand intérêt en terme de communication homme-machine.
-
+% \subsection{Les supports}
 \subsubsection{Le braille}
 Le braille est une manière de représenter l'alphabet. il consiste en une représentation en relief de l'ensemble des lettres, chiffres, ponctuation, sumboles etc
 en relief. Il a été étudie pour permettre un lecture simplement avec les doigts. Le braille a été mis au point par Louis Braille en 1824 et 
@@ -230,9 +218,40 @@ reste aujourd'hui après une série de réformes et normalisation toujourstrès 
 Ce code est un peu plus expressif que le code Morse vu précédement puisqu'il permet de représenter la majorité est symboles par
 une seule cellule. Cependant l'utilité dans l'échange homme-machine reste, comme pour le Morse, très peu utile.
 
+\subsubsection{Le morse}
+Le code Morse est généralement attribué à Samuel Morse. Ce code à été inventé pour la télégraphie en 1835.
+Il consiste en une série d'impulsions. Les lettres, chiffres et signes de ponctuation sont représenté par des séries d'impulsions.
+Seulement deux types d'impulsions son nécessaires pour tout coder, une impulsion courrte que l'on appelle généralement
+"Point" et une impulsion longue appellée "Trait".
+
+Ce protocole est facile à apprendre pour les humains (une liste de quelques séries d'impulsions à associer à chaque lettre), mais il est
+difficile à utiliser pour l'écriture, et encore plus désagréable pour la lecture (si on rate une impulsion, les impulsions suivantes
+risquent de former des symboles valides, mais différents de ceux du message d'origine). Bien qu'il ait été utilisé pour la communication
+entre humains, il s'agit réellement d'une forme de communication primitive avec une machine qui transmettait l'information à une autre via
+une ligne télégraphique ou par ondes radio.
+
+Ce protocole de communication possède un vocabulaire très restreint (le point et le trait, soit un bit, qui assemblés forment les lettres de
+l'alphabet, chiffres et ponctuation). Il n'y a pas à proprement parler de grammaire ni de syntaxe, mis à part que l'assemblage des points et
+des traits fait émerger des symboles plus «gros» (lettres, chiffres et ponctuation). Il est donc très facile à comprendre pour une machine,
+car il suffit de transcrire les points et traits en bits 0 et 1, et un simple automate à états finis permettra de décoder ces séquences de
+bits en une suite de lettres.
+
+Cependant, cette compréhensions s'arrêtrera à une suite de symboles sans sémantique, car le morse possède une très faible expressivité~: Il
+s'agit simplement comme pour le braille d'un encodage de l'alphabet, qui lui-même, comme vu précédemment, nécessite un protocole de plus
+haut niveau (une langue, un langage de programmation…) pour transmettre un message sémantique. Son expressivité est donc comparable à celle
+du braille, voire inférieure car le braille délimite naturellement les symboles, alors que le morse n'apporte pas cette information (il faut
+donc avoir la série d'impulsions depuis le début, ou bien détecter des séquences invalides ou improbables pour trouver le début d'un des
+symboles).
+
+Les militaires ont utilisé ce code pour effectuer des transmission codées, et même si un spectre de fréquence radio et toujours réservé pour
+les sueles émission en morse, il s'agit réellement de la couche physique de la communication selon le modèle OSI, soit la couche la plus
+basse. Ce code n'apporte pas de grand intérêt en terme de communication homme-machine~: difficile à manipuler pour les humains, un
+vocabulaire très restreint et par conséquent une expressivité faible.
+
 \subsubsection{La langue des signes}
 
-\subsubsection{Les vues}
+\subsubsection{Documents techniques}
+% TODO
 Les vues regroupes un grand nombre de représentation très formelle d'objets ou éléments sur un support. Qu'elle soit
 en perspective, d'ensemble, de coupe, éclatée etc, les vues sont normalisées et laissent place à très peu, voire aucune ambigüité dans les
 représentations.
