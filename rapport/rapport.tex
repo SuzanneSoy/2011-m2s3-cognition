@@ -204,19 +204,16 @@ sémantique précises pour les racines) pour le rendre moins ambigu sans
 perdre beaucoup en expressivité.
 
 \section{Alphabets et logogrammes}
+
+% Différences entre alphabets et les *grammes*. Expliquer brièvement leurs propriétés.
+% TODO : parler des idéogrammes etc.
 \subsection{L'alphabet}
+
 % \subsubsection{Ses origines}
 % \subsubsection{Dans quel but}
 % \subsubsection{Des exemples}
 
 % \subsection{Les supports}
-\subsubsection{Le braille}
-Le braille est une manière de représenter l'alphabet. il consiste en une représentation en relief de l'ensemble des lettres, chiffres, ponctuation, sumboles etc
-en relief. Il a été étudie pour permettre un lecture simplement avec les doigts. Le braille a été mis au point par Louis Braille en 1824 et 
-reste aujourd'hui après une série de réformes et normalisation toujourstrès utilisé.
-
-Ce code est un peu plus expressif que le code Morse vu précédement puisqu'il permet de représenter la majorité est symboles par
-une seule cellule. Cependant l'utilité dans l'échange homme-machine reste, comme pour le Morse, très peu utile.
 
 \subsubsection{Le morse}
 Le code Morse est généralement attribué à Samuel Morse. Ce code à été inventé pour la télégraphie en 1835.
@@ -237,16 +234,26 @@ car il suffit de transcrire les points et traits en bits 0 et 1, et un simple au
 bits en une suite de lettres.
 
 Cependant, cette compréhensions s'arrêtrera à une suite de symboles sans sémantique, car le morse possède une très faible expressivité~: Il
-s'agit simplement comme pour le braille d'un encodage de l'alphabet, qui lui-même, comme vu précédemment, nécessite un protocole de plus
-haut niveau (une langue, un langage de programmation…) pour transmettre un message sémantique. Son expressivité est donc comparable à celle
-du braille, voire inférieure car le braille délimite naturellement les symboles, alors que le morse n'apporte pas cette information (il faut
-donc avoir la série d'impulsions depuis le début, ou bien détecter des séquences invalides ou improbables pour trouver le début d'un des
-symboles).
+s'agit simplement d'un encodage de l'alphabet, qui lui-même, comme vu précédemment, nécessite un protocole de plus haut niveau (une langue,
+un langage de programmation…) pour transmettre un message sémantique. Son expressivité est donc comparable à celle du braille (voir
+ci-dessous), voire inférieure car le braille délimite naturellement les symboles, alors que le morse n'apporte pas cette information (il
+faut donc avoir la série d'impulsions depuis le début, ou bien détecter des séquences invalides ou improbables pour trouver le début d'un
+des symboles).
 
 Les militaires ont utilisé ce code pour effectuer des transmission codées, et même si un spectre de fréquence radio et toujours réservé pour
 les sueles émission en morse, il s'agit réellement de la couche physique de la communication selon le modèle OSI, soit la couche la plus
 basse. Ce code n'apporte pas de grand intérêt en terme de communication homme-machine~: difficile à manipuler pour les humains, un
 vocabulaire très restreint et par conséquent une expressivité faible.
+
+\subsubsection{Le braille}
+Le braille est une manière de représenter l'alphabet. il consiste en une représentation en relief de l'ensemble des lettres, chiffres,
+ponctuation, et autres symboles en relief. Il a été étudié pour permettre la lecture simplement avec les doigts. Le braille a été mis au
+point par Louis Braille en 1824 et reste aujourd'hui après une série de réformes et normalisations toujourstrès utilisé.
+
+Ce protocole est assez facile à apprendre, bien qu'il faille une certaine habitude pour lire le braille avec les doigts. Ce code est un peu
+plus expressif que le code Morse vu précédement puisqu'il permet de représenter la majorité est symboles par une seule cellule, et délimite
+donc les symboles sans qu'il y ait besoin d'analyser tout le flux précédent. Cependant l'utilité dans l'échange homme-machine reste, comme
+pour le Morse, très faible.
 
 \subsubsection{La langue des signes}
 
