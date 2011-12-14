@@ -205,15 +205,18 @@ perdre beaucoup en expressivité.
 
 \section{Alphabets et logogrammes}
 
-% Différences entre alphabets et les *grammes*. Expliquer brièvement leurs propriétés.
-% TODO : parler des idéogrammes etc.
+% Différences entre alphabets et les idéogrammes & co. Expliquer brièvement leurs propriétés.
 \subsection{L'alphabet}
 
 % \subsubsection{Ses origines}
 % \subsubsection{Dans quel but}
 % \subsubsection{Des exemples}
 
-% \subsection{Les supports}
+\subsection{idéogrammes}
+\subsection{etc.}
+
+% TODO : titre pourri !
+\subsection{Représentations}
 
 \subsubsection{Le morse}
 Le code Morse est généralement attribué à Samuel Morse. Ce code à été inventé pour la télégraphie en 1835.
@@ -256,25 +259,62 @@ donc les symboles sans qu'il y ait besoin d'analyser tout le flux précédent. C
 pour le Morse, très faible.
 
 \subsubsection{La langue des signes}
+Très court hitorique et but.
 
-\subsubsection{Documents techniques}
+LSF : encodage des lettres, mais aussi sens. Aussi difficile à apprendre qu'une nouvelle langue.
+
+Beaucoup d'ambigüité sur les signes, dans la direction, la vitesse…
+
+Ordis peuvent le parler (Projet IBM), mais difficile à comprendre.
+
+Aussi expressif que langue naturelle.
+
+\section{Langages spécifiques à un domaine}
+\subsection{Documents techniques et formules mathémathiques}
 % TODO
-Les vues regroupes un grand nombre de représentation très formelle d'objets ou éléments sur un support. Qu'elle soit
-en perspective, d'ensemble, de coupe, éclatée etc, les vues sont normalisées et laissent place à très peu, voire aucune ambigüité dans les
-représentations.
 
-De ce fait il est assez simple de stocker sur un machine ce genre d'informations et même de les restituer, par exemple sous
-forme visuelle (sur un écran).
+Les documents techniques, parmi lesquels ont peut trouver différentes vues d'objets (vue en perspective, d'ensemble, de coupe, éclatée…),
+sont des représentation très formelle d'objets ou de concepts. Leur forme est en général assez facile à apprendre pour les humains, car il
+s'agit simplement d'un certain nombre de règles à respecter. Ces documents techniques sont normalisées et laissent place à très peu, voire
+aucune ambigüité dans les représentations.
 
-\subsubsection{Les formules mathématiques}
-Les formules mathématiques représente une des représentation les plus normalisées, même si les personnes ont tendance à 
-adapter les représentation, symboles mathématiques à leurs besoins.
-Les formules mathématiques ont une "expressivité" relativement importante. Leur inconvénient majoritaire se trouve au niveau 
-du lien entre une formule et son contexte.
-En effet il est très difficile de retrouver le contexte d'une formule lorsque celle-ci est déjà écrite et isolée.
+Les formules mathémathiques forment un autre protocole similaire aux documents techniques, très formel, bien que beaucoup de personnes aient
+tendance à être laxistes sur la syntaxe.
 
+L'expressivité de ces protocoles est toutefois relative : Tant que l'on considère uniquement leur domaine d'application, ils restent très
+expressifs (quoi de mieux qu'une formule mathémathique pour parler d'algèbre ?), cependant ces protocoles ne formalisent pas la relation
+entre les choses exprimées et leur contexte. En effet il est très difficile de retrouver la sémantique d'une formule lorsque celle-ci est
+déjà écrite et isolée, et si nous comprenons à quoi se réfèrent les formes dessinées dans une vue éclatée, c'est uniquement par analogie
+avec les objets physiques que nous connaissons déjà. De plus, ces protocoles ne sont expressifs que dans une discipline particulière.
+
+Il est assez simple de stocker sur une machine des documents techniques ou des formules mathémathiques et même de les restituer, par exemple
+sous forme visuelle (sur un écran). Ces protocoles sont relativement faciles à apprendre, et compréhensibles pour une machine, sont très
+expressifs mais seulement dans leur domaine. Ils peuvent donc être adaptés à la communication homme-machine dans un domaine particulier,
+mais pour une communication généralisée, il faudra les utiliser conjointement avec d'autres protocoles.
+
+\subsection{Langages de programmation spécifiques à un domaine}
+
+Difficiles à apprendre, mais pas trop, et être un expert du domaine aide beaucoup.
+
+Ambigüité faible.
+
+Expressivité forte, mais seulement dans le domaine.
+
+Exemples : BCL, …
 
 \section{Conclusion}
-Graphique de comparaison des différents supports en terme d'expressivité et de formalismem.
+Graphique de comparaison des différents supports en terme d'expressivité et de formalisme.
+
+Ouverture : une collection de langages spécifiques à un domaine : Un pour le déroulement global de la conversation, un ou plusieurs
+permettant de faire la liaison entre les concepts et relations exprimés dans différents protocoles, puis un pour chaque domaine pour lequel
+on veut converser avec la machine. Cela exige un effort d'apprentissage plus élevé pour l'agent naturel, car il faut qu'il apprenne un
+nouveau protocole pour chaque dicipline. Cependant, cet effort d'apprentissage est morcelé : l'utilisateur peut commencer par apprendre
+seulement quelques protocoles, converser avec la machine, puis au fil des besoins apprendre de nouveaux protocoles au fur et à mesure.
+
+Pour résumer, l'utilisateur dialoguerait avec la machine en utilisant une multitude de «jargons» adaptés à une communication efficace et
+sans ambigüités dans leur domaine, et quelques protocoles transversaux pour articuler la discussion et relier entre eux les fragments de
+conversation rédigés dans des langages différents.
+
+%schéma montrant cette architecture.
 
 \end{document}
