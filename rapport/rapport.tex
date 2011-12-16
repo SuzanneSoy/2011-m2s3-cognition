@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes,positioning,snakes,calc,chains}
 \usepackage{hyperref}
 \hypersetup{%
   colorlinks,%
@@ -203,19 +205,22 @@ contraintes sur la syntaxe (et le vocabulaire, en fixant une
 sémantique précises pour les racines) pour le rendre moins ambigu sans
 perdre beaucoup en expressivité.
 
-\section{Alphabets et logogrammes}
+\section{Logogrammes}
 
-% Différences entre alphabets, idéogrammes…. Expliquer brièvement leurs propriétés.
+% Différences entre idéogrammes…. Expliquer brièvement leurs propriétés.
 
-\subsection{Alphabets, phonogrammes et syllabaires}
+\subsection{Phonogrammes et syllabaires}
 \subsection{Idéogrammes et pictogrammes}
 
 \subsection{Codages et systèmes d'écriture}
 \subsubsection{Le morse}
-Le code Morse est généralement attribué à Samuel Morse. Ce code à été inventé pour la télégraphie en 1835.
-Il consiste en une série d'impulsions. Les lettres, chiffres et signes de ponctuation sont représenté par des séries d'impulsions.
-Seulement deux types d'impulsions son nécessaires pour tout coder, une impulsion courrte que l'on appelle généralement
-"Point" et une impulsion longue appellée "Trait".
+Le code Morse est généralement attribué à Samuel Morse. Ce code à été
+inventé pour la télégraphie en 1835.  Il consiste en une série
+d'impulsions. Les lettres, chiffres et signes de ponctuation sont
+représenté par des séries d'impulsions.  Seulement deux types
+d'impulsions son nécessaires pour tout coder, une impulsion courrte
+que l'on appelle généralement "Point" et une impulsion longue appellée
+"Trait".
 
 Ce protocole est facile à apprendre pour les humains (une liste de
 quelques séries d'impulsions à associer à chaque lettre), mais il est
@@ -358,7 +363,45 @@ Expressivité forte, mais seulement dans le domaine.
 Exemples : BCL, …
 
 \section{Conclusion}
-Graphique de comparaison des différents supports en terme d'expressivité et de formalisme.
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[scale=0.5,node distance=0.5cm,font=\footnotesize]
+    \node at (12,10) {};
+    \draw[->] (0,0) -- (11cm,0);
+    \draw[->] (0,0) -- (0,11cm);
+    \node[anchor=north] at (10cm,0) {Expressivité};
+    \node[anchor=south,xshift=0.5cm] at (0,11cm) {Formalisme};
+    
+    \node[fill=red,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (mb) at (1cm,10cm) {};
+    \node[right=of mb,text width=2cm] (mbtext) {Morse\\Braille};
+    \draw[draw=red,draw opacity=0.5,thick] (mbtext.170) -- (mb);
+    
+    \node[fill=orange, fill opacity=0.5,ellipse,minimum width=1cm,minimum height=0.5cm,inner sep=1mm,rotate=-90] (sph) at (1cm,9.4cm) {};
+    \node[anchor=west,at=(sph.30),xshift=1.5cm,yshift=-0.8cm,text width=2cm] (s) {Syllabaires\\Phonogrammes};
+    \draw[draw=orange,draw opacity=0.5,thick] (s.170) -- (sph);
+    
+    \node[fill=yellow!80!black, fill opacity=0.5,ellipse,minimum width=3cm,minimum height=0.7cm,inner sep=1mm,rotate=-65] (ipi) at (2cm,8cm) {};
+    \node[anchor=north,at=(ipi.south),yshift=-1.5cm,xshift=5mm,text width=2cm,text centered] (i) {Idéogrammes\\Pictogramme\\LSF};
+    \draw[draw=yellow!80!black,draw opacity=0.5,thick] (i) -- (ipi.-15);
+    
+    \node[fill=green,fill opacity=0.5,ellipse,minimum width=2.8cm,minimum height=0.8cm,inner sep=1mm,rotate=-45] at (8.5cm,2.5cm) {Espéranto};
+    \node[fill=blue, fill opacity=0.5,ellipse,minimum width=2.3cm,minimum height=0.7cm,inner sep=1mm,rotate=-20] at (8.5cm,1.5cm) {Français};
+    
+    \node[fill=brown,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (no) at (6cm,10cm) {};
+    \node[right=of no,text width=2cm] (notext) {Notations};
+    \draw[draw=brown,draw opacity=0.5,thick] (notext) -- (no);
+    
+    \node[fill=brown,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (bcl) at (6cm,9cm) {};
+    \node[right=of bcl,text width=2cm] (bcltext) {BCL};
+    \draw[draw=brown,draw opacity=0.5,thick] (bcltext) -- (bcl);
+    
+    \draw[draw=black,line width=1mm,draw opacity=0.5] (0.2,10.8) -- (10.8,0.2);
+  \end{tikzpicture}
+  \caption{Comparaison de l'expressivité et du formalisme des différents protocoles.}
+\end{figure}
+
+% TODO : même graphique pour expressivité vs. facilité
+% d'apprentissage, et facilité d'apprentissage vs formalisme.
 
 Ouverture : une collection de langages spécifiques à un domaine : Un pour le déroulement global de la conversation, un ou plusieurs
 permettant de faire la liaison entre les concepts et relations exprimés dans différents protocoles, puis un pour chaque domaine pour lequel
