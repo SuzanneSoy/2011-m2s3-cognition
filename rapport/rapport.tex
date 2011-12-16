@@ -36,17 +36,17 @@
 \section{Introduction}
 \subsection{Approche générale}
 Tout individu quel qu'il soit, privé de toutes formes de communication, 
-d'émotions et de sensations, ne peuvent en aucune manière évoluer et 
+d'émotions et de sensations, ne peut en aucune manière évoluer et 
 former de groupes cohérents. L'intégrité et la cohérence d'un groupe 
-passe majoritairement par un échange d'informations entre les individus.
+passent majoritairement par un échange d'informations entre les individus.
 Celles-ci ne peuvent pas être transmises n'importe comment, les individus 
 constituant le groupe doivent être en mesure de les comprendre. 
 
-Le formatage de l'information devient essentiel tout comme le 
+Le formatage de l'information devient essentiel, tout comme le 
 support qui va être utilisé pour la transmettre.
-Au fil du temps les individus ont apris à échanger des idées et des 
+Au fil du temps les individus ont appris à échanger des idées et des 
 concepts de diverses manières. Que ce soit par le biais de gestes, de 
-dessin, de rictus ou bien d'autre, les hommes ont petit à petit mis en 
+dessin, de rictus ou bien d'autres, les hommes ont petit à petit mis en 
 place un moyen de communication efficace. Toutes ces façons de 
 transmettre l'information ont sans cesse évolué pour répondre en 
 permanance aux besoins.
@@ -61,7 +61,7 @@ Le but de cette étude est de trouver un ou des protocoles de
 communication entre agents qui seraient facilement appris par des
 agents naturels (les humains), qui pourraient de préférence être
 utilisés dans la communication de tous les jours (cela assurerait que
-les humains maîtriserait bien le protocole), et qui seraient
+les humains maîtriseraient bien le protocole), et qui seraient
 facilement «compris» par une machine.
 
 Comme un tel protocole n'existe probablement pas, nous étudierons la
@@ -80,19 +80,19 @@ ordres pour les mots d'une phrase, mais souvent avec une différence
 dans la sémantique.
 
 Nous chercherons aussi à ce que les protocoles étudiés soient
-formels. En d'autre termes ceux qui ont normes, des règles bien
+formels. En d'autre termes ceux qui ont des normes, des règles bien
 définies, qui permettent de définir le protocole de manière unique et
-sans ambiguïtées, ce qui facilite leur interprétation par la
+sans ambigüités, ce qui facilite leur interprétation par la
 machine. La plupart des protocoles artificiels ont une syntaxe et une
 grammaire plutôt rigoureuse.
 
-Nous considèrerons les protocoles parlés couremment par un gand nombre
+Nous considérerons les protocoles parlés couramment par un gand nombre
 d'agents naturels (des humains). Nous n'explorerons pas la possibilité
 d'utiliser ces mêmes protocoles entre des agents artificiels comme des
 robots ou des ordinateurs, ni des protocoles prévus dans ce but (car
 ils sont en général inadaptés à l'apprentissage par les humains).
 
-\subsection{Criètres}
+\subsection{Critères}
 Pour chaque protocole de communication, nous étudierons plusieurs critères~:
 \begin{itemize}
 \item La facilité d'apprentissage par un individu.
@@ -157,7 +157,7 @@ Bien que peu de gens parlent l'espéranto, c'est une langue qui est
 facile à apprendre. On estime qu'il faut compter 150 heures d'étude
 pour pouvoir suivre une conversation courante enespéranto. L'espéranto
 est donc relativement facile à apprendre, même pour les gens ne le
-parnant pas encore.
+parlant pas encore.
 
 Le vocabulaire de l'espéranto, comme celui de la plupart des langues
 naturelles, contient des ambigüités, certains mots sont polysémiques,
@@ -187,19 +187,19 @@ avantage, car cela permet de ne pas trop se soucier de l'ordre des
 mots sans parler «petit nègre». Pour qu'une machine comprenne les
 humains, cela signifie que l'on peut imposer à l'utilisateur d'écrire
 ses phrases sous une certaine forme, pour faciliter l'analyse, sans
-que cela réduisse grandement l'expressivité.
+que cela réduise grandement l'expressivité.
 
 En ce qui concerne l'expressivité justement, bien que l'espéranto ait
 fait l'objet de plusieurs critiques considérant que puisque
 l'espéranto était une langue construite il ne pouvait pas avoir la
-richesse d'une langue naturele, il est communément admis par les
+richesse d'une langue naturelle, il est communément admis par les
 espérantistes que l'expressivité de l'espéranto est aussi grande que
 celle des langues naturelles. On trouve en espéranto de la poésie, des
 discours politiques, des contes pour enfants et même des articles
 encyclopédiques (il existe une version de wikipedia en espéranto).
 
 L'espéranto est donc un protocole de communication relativement facile
-à apprendre, disposant d'une grande expressivié, assez ambigu mais
+à apprendre, disposant d'une grande expressivité, assez ambigu mais
 moins que la plupart des langues naturelles. On peut imposer des
 contraintes sur la syntaxe (et le vocabulaire, en fixant une
 sémantique précises pour les racines) pour le rendre moins ambigu sans
@@ -207,20 +207,65 @@ perdre beaucoup en expressivité.
 
 \section{Logogrammes}
 
-% Différences entre idéogrammes…. Expliquer brièvement leurs propriétés.
-
 \subsection{Phonogrammes et syllabaires}
+Les phonogrammes sont des caractères utilisés pour représenter un
+phonème dans l'écriture d'une langue. Les syllabaires représentent, eux,
+une syllabe entière. Ces caractères peuvent être utilisés pour
+transcrire la pensée de l'utilisateur.
+
+Les alphabets utilisant des phonogrammes comportent en général un
+faible nombre de caractères et sont donc faciles à apprendre. Les
+alphabets syllabaires comportent souvent un nombre de caractères
+beaucoup plus grand, car en combinant plusieurs phonèmes, l'espace des
+possibilités devient vite vaste.
+
+Ces notations peuvent être utilisées pour communiquer avec la machine,
+soit avec un clavier, soit par reconnaissance de caractères. Excepté
+une certaine ambigüité lors de la reconnaissance d'une écriture mal
+formée dans le second cas, il n'y a pas beaucoup de place à
+l'interprétation.
+
+Cependant, cette facilité de compréhension par une machine vient au
+dépens de l'expressivité, puisque ces protocole ne permet d'encoder
+que des phonèmes ou syllabes, et ne dit rien de leur signification.
+
+Les phonogrammes et syllabaires sont donc faciles à apprendre, avec
+une très faible expressivité et peu d'ambigüité.
+
 \subsection{Idéogrammes et pictogrammes}
+
+Les pictogrammes sont des caractères représentant des concepts
+concrets, en les dessinant, ou avec une forte analogie. Les
+idéogrammes sont la combinaison de plusieurs pictogrammes pour
+représenter quelque chose d'abstrait.
+
+Ces notations sont relativement difficiles à apprendre, puisqu'il faut
+environ un symbole par concept, et le nombre de caractères est donc
+très grand. Par ailleurs, l'expressivité des idéogrammes et
+pictogrammes est supérieure à celle des phonogrammes et syllabaires.
+
+Les idéogrammes et pictogrammes peuvent être assez ambigus, puisqu'un
+caractère représentera un concept général, mais sa sémantique précise
+viendra du contexte, tout comme le vocabulaire d'une langue.
+
+Ces écritures peuvent toutefois être utilisées dans la communication
+homme-machine, comme le jeu Captain Blood l'a montré, dans lequel le
+joueur communique avec différentes races d'extraterrestres au moyen
+d'une vingtaine de pictogrammes.
+
+Les idéogrammes et pictogrammes sont donc plus difficiles à apprendre
+que phonogrammes et syllabaires, avec une expressivité plus forte et
+une plus grande ambigüité.
 
 \subsection{Codages et systèmes d'écriture}
 \subsubsection{Le morse}
 Le code Morse est généralement attribué à Samuel Morse. Ce code à été
 inventé pour la télégraphie en 1835.  Il consiste en une série
 d'impulsions. Les lettres, chiffres et signes de ponctuation sont
-représenté par des séries d'impulsions.  Seulement deux types
-d'impulsions son nécessaires pour tout coder, une impulsion courrte
-que l'on appelle généralement "Point" et une impulsion longue appellée
-"Trait".
+représentés par des séries d'impulsions.  Seulement deux types
+d'impulsions sont nécessaires pour tout coder, une impulsion courte
+que l'on appelle généralement «Point» et une impulsion longue appellée
+«Trait».
 
 Ce protocole est facile à apprendre pour les humains (une liste de
 quelques séries d'impulsions à associer à chaque lettre), mais il est
@@ -241,7 +286,7 @@ machine, car il suffit de transcrire les points et traits en bits 0 et
 1, et un simple automate à états finis permettra de décoder ces
 séquences de bits en une suite de lettres.
 
-Cependant, cette compréhensions s'arrêtrera à une suite de symboles
+Cependant, cette compréhension s'arrêtera à une suite de symboles
 sans sémantique, car le morse possède une très faible expressivité~:
 Il s'agit simplement d'un encodage de l'alphabet, qui lui-même, comme
 vu précédemment, nécessite un protocole de plus haut niveau (une
@@ -249,9 +294,9 @@ langue, un langage de programmation…) pour transmettre un message
 sémantique. Son expressivité est donc comparable à celle du braille
 (voir ci-dessous).
 
-Les militaires ont utilisé ce code pour effectuer des transmission
-codées, et même si un spectre de fréquence radio et toujours réservé
-pour les seules émission en morse, il s'agit réellement de la couche
+Les militaires ont utilisé ce code pour effectuer des transmissions
+codées, et même si un spectre de fréquence radio est toujours réservé
+pour les seules émissions en morse, il s'agit réellement de la couche
 physique de la communication selon le modèle OSI, soit la couche la
 plus basse. Ce code n'apporte pas de grand intérêt en terme de
 communication homme-machine~: difficile à manipuler pour les humains,
@@ -264,12 +309,12 @@ une représentation en relief de l'ensemble des lettres, chiffres,
 ponctuation, et autres symboles en relief. Il a été étudié pour
 permettre la lecture simplement avec les doigts. Le braille a été mis
 au point par Louis Braille en 1824 et reste aujourd'hui après une
-série de réformes et normalisations toujourstrès utilisé.
+série de réformes et normalisations toujours très utilisé.
 
 Ce protocole est assez facile à apprendre, bien qu'il faille une
 certaine habitude pour lire le braille avec les doigts. Son utilité
 dans l'échange homme-machine reste, comme pour le Morse, très faible,
-et seuls les malvoyants et aveugles ont un intérêt à l'utilisera pour
+et seuls les malvoyants et aveugles ont un intérêt à l'utiliser pour
 saisir ou lire du texte sur une plage braille, comme on utiliserait un
 clavier et un écran.
 
@@ -280,8 +325,8 @@ aussi à ces personnes de dialoguer avec les entendants qui ont appris
 leur langue des signes.
 
 La Langue des Signes Française (LSF) permet entre autres l'encodage
-des lettres (on peut épeller un mot français en LSF), mais comme ce ne
-serait vraiment pas pratique d'épeller une conversation entière, la
+des lettres (on peut épeler un mot français en LSF), mais comme ce ne
+serait vraiment pas pratique d'épeler une conversation entière, la
 LSF possède un grand nombre de signes permettant d'exprimer la plupart
 des concepts que la langue française sait exprimer, et les relations
 entre ces concepts. La Langue des Signes Française est donc aussi
@@ -321,7 +366,7 @@ nécessite un assez grand effort, bien que le résultat soit très
 intéressant (il permet de communiquer avec une partie de la population
 qui est par ailleurs plutôt exclue de la communication entre
 humains). Les langues des signes disposent d'une grande expressivité,
-mais sont au moins aussi ambigus que les langues parlées, voire
+mais sont au moins aussi ambigües que les langues parlées, voire
 plus. Leur compréhension par la machine est assez difficile, mais leur
 expression est possible (et déjà réalisée dans le cadre du projet
 SiSi). Leur utilisation en tant que protocole de communication entre
@@ -329,38 +374,64 @@ l'homme et la machine n'a pas grand intérêt, par contre, leur
 compréhension par la machine à des fins éducatives ou de traduction
 est très prometteuse.
 
-\section{Langages spécifiques à un domaine}
+\section{Notations spécifiques à un domaine}
 \subsection{Documents techniques et formules mathémathiques}
 % TODO
 
-Les documents techniques, parmi lesquels ont peut trouver différentes vues d'objets (vue en perspective, d'ensemble, de coupe, éclatée…),
-sont des représentation très formelle d'objets ou de concepts. Leur forme est en général assez facile à apprendre pour les humains, car il
-s'agit simplement d'un certain nombre de règles à respecter. Ces documents techniques sont normalisées et laissent place à très peu, voire
-aucune ambigüité dans les représentations.
+Les documents techniques, parmi lesquels on peut trouver différentes
+vues d'objets (vue en perspective, d'ensemble, de coupe, éclatée…),
+sont des représentation très formelle d'objets ou de concepts. Leur
+forme est en général assez facile à apprendre pour les humains, car il
+s'agit simplement d'un certain nombre de règles à respecter. Ces
+documents techniques sont normalisés et laissent place à très peu,
+voire aucune ambigüité dans les représentations.
 
-Les formules mathémathiques forment un autre protocole similaire aux documents techniques, très formel, bien que beaucoup de personnes aient
-tendance à être laxistes sur la syntaxe.
+Les formules mathémathiques forment un autre protocole similaire aux
+documents techniques, très formel, bien que beaucoup de personnes
+aient tendance à être laxistes sur la syntaxe.
 
-L'expressivité de ces protocoles est toutefois relative : Tant que l'on considère uniquement leur domaine d'application, ils restent très
-expressifs (quoi de mieux qu'une formule mathémathique pour parler d'algèbre ?), cependant ces protocoles ne formalisent pas la relation
-entre les choses exprimées et leur contexte. En effet il est très difficile de retrouver la sémantique d'une formule lorsque celle-ci est
-déjà écrite et isolée, et si nous comprenons à quoi se réfèrent les formes dessinées dans une vue éclatée, c'est uniquement par analogie
-avec les objets physiques que nous connaissons déjà. De plus, ces protocoles ne sont expressifs que dans une discipline particulière.
+L'expressivité de ces protocoles est toutefois relative : Tant que
+l'on considère uniquement leur domaine d'application, ils restent très
+expressifs (quoi de mieux qu'une formule mathémathique pour parler
+d'algèbre ?), cependant ces protocoles ne formalisent pas la relation
+entre les choses exprimées et leur contexte. En effet il est très
+difficile de retrouver la sémantique d'une formule lorsque celle-ci
+est déjà écrite et isolée, et si nous comprenons à quoi se réfèrent
+les formes dessinées dans une vue éclatée, c'est uniquement par
+analogie avec les objets physiques que nous connaissons déjà. De plus,
+ces protocoles ne sont expressifs que dans une discipline
+particulière.
 
-Il est assez simple de stocker sur une machine des documents techniques ou des formules mathémathiques et même de les restituer, par exemple
-sous forme visuelle (sur un écran). Ces protocoles sont relativement faciles à apprendre, et compréhensibles pour une machine, sont très
-expressifs mais seulement dans leur domaine. Ils peuvent donc être adaptés à la communication homme-machine dans un domaine particulier,
-mais pour une communication généralisée, il faudra les utiliser conjointement avec d'autres protocoles.
+Il est assez simple de stocker sur une machine des documents
+techniques ou des formules mathémathiques et même de les restituer,
+par exemple sous forme visuelle (sur un écran). Ces protocoles sont
+relativement faciles à apprendre, et compréhensibles pour une machine,
+sont très expressifs mais seulement dans leur domaine. Ils peuvent
+donc être adaptés à la communication homme-machine dans un domaine
+particulier, mais pour une communication généralisée, il faudra les
+utiliser conjointement avec d'autres protocoles.
 
 \subsection{Langages de programmation spécifiques à un domaine}
 
-Difficiles à apprendre, mais pas trop, et être un expert du domaine aide beaucoup.
+Les langages de programmation spécifiques à un domaine (DSL) sont des
+langages artificiels utilisés en informatique pour exprimer des
+concepts et relations dans une discipline particulière. De tels
+langages ont aussi été utilisés pour une communication entre humains,
+par exemple le langage BCL (Buisness Contract Language) permet de
+formaliser des contrats, et permet de s'assurer via un programme
+informatique que tous les cas possibles ont été réglementés par le
+contrat, et que les clauses du contrat ne sont pas incompatibles.
 
-Ambigüité faible.
+Ces langages sont assez difficiles à apprendre, mais pas trop, et être
+un expert du domaine aide beaucoup.
 
-Expressivité forte, mais seulement dans le domaine.
+Ils présentent une faible ambigüité, puisqu'ils ont été spécialement
+conçus pour représenter de manière claire et concise les concepts et
+relations propres à leur domaine.
 
-Exemples : BCL, …
+Ils présentent une forte expressivité, mais seulement dans la
+discipline qui les concerne, et souvent présentent de graves lacunes
+dans tout ce qui ne touche pas directement à leur domaine.
 
 \section{Conclusion}
 \begin{figure}[h]
@@ -391,28 +462,54 @@ Exemples : BCL, …
     \node[right=of no,text width=2cm] (notext) {Notations};
     \draw[draw=brown,draw opacity=0.5,thick] (notext) -- (no);
     
-    \node[fill=brown,  fill opacity=0.5,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (bcl) at (6cm,9cm) {};
-    \node[right=of bcl,text width=2cm] (bcltext) {BCL};
-    \draw[draw=brown,draw opacity=0.5,thick] (bcltext) -- (bcl);
+    \node[fill=none,circle, minimum width=0.5cm,minimum height=0.5cm,inner sep=1mm,rotate=0] (bcl) at (6cm,9cm) {};
+    \node[right=of bcl,text width=2cm] (bcltext) {DSL};
+    \draw[draw=brown,draw opacity=0.5,thick] (bcltext.west) -- (no);
     
     \draw[draw=black,line width=1mm,draw opacity=0.5] (0.2,10.8) -- (10.8,0.2);
   \end{tikzpicture}
   \caption{Comparaison de l'expressivité et du formalisme des différents protocoles.}
 \end{figure}
 
-% TODO : même graphique pour expressivité vs. facilité
-% d'apprentissage, et facilité d'apprentissage vs formalisme.
+Dans le graphique ci-dessus, le protocole de communication
+homme-machine idéal serait situé dans le coin supérieur droit, avec
+une forte expressivité et un formalisme élevé. L'étude des protocoles
+existant montre qu'en général, le niveau de formalisme est inversément
+proportionnel à l'expressivité. Le graphique représentant le
+formalisme en fonction de la facilité d'apprentissage est sensiblement
+le même, et n'a donc pas été représenté ici.
 
-Ouverture : une collection de langages spécifiques à un domaine : Un pour le déroulement global de la conversation, un ou plusieurs
-permettant de faire la liaison entre les concepts et relations exprimés dans différents protocoles, puis un pour chaque domaine pour lequel
-on veut converser avec la machine. Cela exige un effort d'apprentissage plus élevé pour l'agent naturel, car il faut qu'il apprenne un
-nouveau protocole pour chaque dicipline. Cependant, cet effort d'apprentissage est morcelé : l'utilisateur peut commencer par apprendre
-seulement quelques protocoles, converser avec la machine, puis au fil des besoins apprendre de nouveaux protocoles au fur et à mesure.
+Bien que l'espéranto présente des avantages par rapport à la plupart
+des langues naturelles, il présente beaucoup d'ambigüité. Les
+protocoles qui semblent réellement faire exception sont les notations
+spécifiques à un domaine (DSL, notations mathémathiques, vues
+normalisées…). Cette apparente supériorité résulte du fait que ces
+protocoles sont très expressifs dans leur spécialité, et uniquement
+celle-là, ce qui leur permet d'atteindre un haut niveau de formalisme
+en sacrifiant leur expressivité dans d'autres domaines.
 
-Pour résumer, l'utilisateur dialoguerait avec la machine en utilisant une multitude de «jargons» adaptés à une communication efficace et
-sans ambigüités dans leur domaine, et quelques protocoles transversaux pour articuler la discussion et relier entre eux les fragments de
+Il serait donc envisageable d'utiliser pour la communication
+homme-machine une collection de langages spécifiques à un domaine : Un
+protocole pour le déroulement global de la conversation, un ou
+plusieurs permettant de faire la liaison entre les concepts et
+relations exprimés dans différents protocoles, puis un pour chaque
+domaine pour lequel on veut converser avec la machine. Cela exigerait
+un effort d'apprentissage plus élevé pour l'agent naturel, car il
+faudrait qu'il apprenne un nouveau protocole pour chaque
+dicipline. Cependant, cet effort d'apprentissage serait morcelé :
+l'utilisateur pourrait commencer par apprendre seulement quelques
+protocoles, converser avec la machine, puis au fil des besoins
+apprendre de nouveaux protocoles au fur et à mesure.
+
+Cette technique serait la contraposée de l'hypothèse de Sapir-Whorf~:
+Plutôt que de supposer que la langue utilisée conditionne la pensée du
+locuteur, le locuteur utiliserait la «langue» adaptée aux pensées
+qu'il veut véhiculer.
+
+Pour résumer, l'utilisateur dialoguerait avec la machine en utilisant
+une multitude de «jargons» adaptés à une communication efficace et
+sans ambigüités dans leur domaine, et quelques protocoles transversaux
+pour articuler la discussion et relier entre eux les fragments de
 conversation rédigés dans des langages différents.
-
-%schéma montrant cette architecture.
 
 \end{document}
