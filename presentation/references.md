@@ -2,3 +2,4 @@
 braille espéranto
 idéogrammes & co. http://www.atelier-calligraphie.com/frames/savlogo.htm
 http://computer.howstuffworks.com/drm2.htm (encadré à gauche) : langages pour définir les droits.
+Formalisation de contrats http://szabo.best.vwh.net/contractlanguage.html
